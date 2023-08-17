@@ -1,13 +1,12 @@
-import time
 from threading import Thread
 
 import schedule
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.urls import reverse
 from django.views.generic import CreateView
 
 from car.models import Car
-from order.cervices import send_order_email, schedule_email, start_scheduling
+from order.cervices import schedule_email, start_scheduling
 from order.models import Order
 
 
@@ -25,9 +24,7 @@ class OrderCreateView(CreateView):
 
     def form_valid(self, form):
         obj = form.save()
-        # send_order_email(obj)
 
-        # schedule.every(1).minutes.do(schedule_email, obj)
         schedule.every().day.at("14:06").do(schedule_email, obj)
 
         t = Thread(target=start_scheduling)
