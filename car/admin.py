@@ -10,7 +10,7 @@ class OwnerAdmin(admin.ModelAdmin):
 
 @admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
-    list_display = ('name', 'year', 'owner')
+    list_display = ('name', 'year', 'owner', 'image')
     list_filter = ('year', 'owner',)
 
 

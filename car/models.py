@@ -20,6 +20,7 @@ class Car(models.Model):
 
     name = models.CharField(max_length=50, verbose_name='модель')
     year = models.PositiveSmallIntegerField(**NULLABLE, verbose_name='год выпуска')
+    image = models.ImageField(upload_to='preview/', verbose_name='изображение ', **NULLABLE)
 
     price = models.IntegerField(**NULLABLE, verbose_name='цена')
 
