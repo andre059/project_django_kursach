@@ -1,0 +1,15 @@
+{% extends 'car/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">Создание заявки на машину {{ car }}</div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="car_id" value="{{ car.pk }}">
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Оставить заявку</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
