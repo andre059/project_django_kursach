@@ -3,17 +3,20 @@
 {% block content %}
 {% for object in object_list %}
 <div class="card mb-4 box-shadow">
+    <div class="card">
+        <img src="/media/{{ object.image }}" alt="Card Image" class="card-image">
+    </div>
     <div class="card-header">
         <h4 class="my-0 font-weight-normal">{{ object.name }}</h4>
     </div>
     <div class="card-body">
         {% if object.price %}
-            <h2 class="card-title pricing-card-title">Цена - {{ object.price }} руб.</h2>
+        <h2 class="card-title pricing-card-title">Цена - {{ object.price }} руб.</h2>
         {% else %}
-            <h2 class="card-title pricing-card-title">
-                <small class="text-muted">
-                    Цена - не указана!
-                </small></h2>
+        <h2 class="card-title pricing-card-title">
+            <small class="text-muted">
+                Цена - не указана!
+            </small></h2>
         {% endif %}
         <a href="{% url 'car:car_view' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary">
             Информация
