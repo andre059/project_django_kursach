@@ -25,7 +25,7 @@ class OrderCreateView(CreateView):
     def form_valid(self, form):
         obj = form.save()
 
-        schedule.every().day.at("14:06").do(schedule_email, obj)
+        schedule.every().day.at("17:20").do(schedule_email, obj)
 
         t = Thread(target=start_scheduling)
         t.start()
