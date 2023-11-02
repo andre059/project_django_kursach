@@ -54,8 +54,8 @@ class User(AbstractUser):
         """Есть ли у пользователя определенное разрешение?"""
         return True
 
-    def has_module_perms(self, app_label):
-        """Есть ли у пользователя разрешения на просмотр приложения 'app_label'?"""
+    def has_module_perms(self, admin):
+        """Есть ли у пользователя разрешения на просмотр приложения 'admin'?"""
         return True
 
     @property
