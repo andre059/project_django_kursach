@@ -1,52 +1,67 @@
-from django.contrib.auth.base_user import BaseUserManager
+from django.contrib.auth.base_user import BaseUserManager, AbstractBaseUser
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 from car.models import NULLABLE
 
 
-# class UserManager(BaseUserManager):
-    # use_in_migrations = True
+class UserManager(BaseUserManager):
+    def create_user(self, email, date_of_birth, password=None):
+        """
+        Создает и сохраняет пользователя с указанным адресом электронной почты, датой
+        рождения и паролем.
+        """
+        if not email:
+            raise ValueError("У пользователей должен быть адрес электронной почты")
 
-    # def _create_user(self, email, password, **extra_fields):
-        # if not email:
-            # raise ValueError('Users require an email field')
-        # email = self.normalize_email(email)
-        # user = self.model(email=email, **extra_fields)
-        # user.set_password(password)
-        # user.save(using=self._db)
-        # return user
+        user = self.model(email=self.normalize_email(email), date_of_birth=date_of_birth, )
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
 
-    # def create_user(self, email, password=None, **extra_fields):
-        # extra_fields.setdefault('is_staff', False)
-        # extra_fields.setdefault('is_superuser', False)
-        # return self._create_user(email, password, **extra_fields)
-
-    # def create_superuser(self, email, password, **extra_fields):
-        # extra_fields.setdefault('is_staff', True)
-        # extra_fields.setdefault('is_superuser', True)
-
-        # if extra_fields.get('is_staff') is not True:
-            # raise ValueError('Superuser must have is_staff=True.')
-        # if extra_fields.get('is_superuser') is not True:
-            # raise ValueError('Superuser must have is_superuser=True.')
-
-        # return self._create_user(email, password, **extra_fields)
+    def create_superuser(self, email, date_of_birth, password=None):
+        """
+        Создает и сохраняет суперпользователя с указанным адресом электронной почты, датой
+        рождения и паролем.
+        """
+        user = self.create_user(email, password=password, date_of_birth=date_of_birth, )
+        user.is_admin = True
+        user.save(using=self._db)
+        return user
 
 
 class User(AbstractUser):
     username = None
     email = models.EmailField(unique=True, verbose_name='почта')
 
-    # objects = UserManager()
+    objects = UserManager()
 
     phone = models.CharField(max_length=35, verbose_name='телефон', **NULLABLE)
     avatar = models.ImageField(upload_to='users/', verbose_name='аватар', **NULLABLE)
     country = models.CharField(max_length=100, verbose_name='страна')
     is_active = models.BooleanField(default=False, verbose_name='активный')
 
+    date_of_birth = models.DateField(verbose_name='дата_рождения', **NULLABLE)
+    is_admin = models.BooleanField(default=False)
+
     USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ["date_of_birth"]
+
+    def __str__(self):
+        return self.email
+
+    def has_perm(self, perm, obj=None):
+        """Есть ли у пользователя определенное разрешение?"""
+        return True
+
+    def has_module_perms(self, app_label):
+        """Есть ли у пользователя разрешения на просмотр приложения 'app_label'?"""
+        return True
+
+    @property
+    def is_staff(self):
+        """Является ли пользователь сотрудником?"""
+        return self.is_admin
 
 
 class EmailVerificationToken(models.Model):

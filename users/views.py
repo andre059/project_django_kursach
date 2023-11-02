@@ -73,7 +73,7 @@ def activate(request, uidb64, token):
         return render(request, 'users/invalid_link.html')
 
 
-class ProfileView(LoginRequiredMixin, UpdateView):
+class ProfileView(UpdateView):
     model = User
     form_class = UserProfileForm
     success_url = reverse_lazy('users:profile')
