@@ -7,6 +7,6 @@ app_name = CarConfig.name
 
 
 urlpatterns = [
-    path('', CarListView.as_view(), name='base'),
+    path('', CarListView.as_view(), name='home'),
     path('<int:pk>/', CarDetailView.as_view(), name='car_view'),
 ]
