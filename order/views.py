@@ -23,12 +23,15 @@ class OrderCreateView(CreateView):
         return context_data
 
     def form_valid(self, form):
-        obj = form.save()
+        obj = form.save(commit=False)
+        obj.email_sent = False  # Установить флаг email_sent в False для текущего объекта Order
 
-        schedule.every().day.at("17:20").do(schedule_email, obj)
+        schedule.every().day.at("13:00").do(schedule_email, obj)
 
         t = Thread(target=start_scheduling)
         t.start()
+
+        obj.save()
 
         return super().form_valid(form)
 

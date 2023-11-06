@@ -19,6 +19,9 @@ def send_order_email(order_item: Order):
         [order_item.car.owner.email],
     )
 
+    order_item.email_sent = True
+    order_item.save()
+
 
 def schedule_email(order):
     send_order_email(order)
