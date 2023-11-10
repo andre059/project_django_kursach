@@ -1,0 +1,56 @@
+{% extends 'car/base.html' %}
+
+{% block content %}
+<div class="col-12">
+    <form class="row" method="post" enctype="multipart/form-data">
+        <div class="col-6">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    Форма
+                </div>
+                <div class="card-body">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary" style="background-color: blue; color: white;">
+                        Создать
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    Владелец
+                </div>
+                <div class="card-body">
+                    {{ Owner_formset.management_form }}
+                    {% for form in Owner_formset.forms %}
+                        {{ form.as_p }}
+                        {% if not forloop.last %}
+                        <hr>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+            <div class="col-6">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        История авто
+                    </div>
+                    <div class="card-body">
+                        {{ CarHistory_formset.management_form }}
+                        {% for form in CarHistory_formset.forms %}
+                            {{ form.as_p }}
+                            {% if not forloop.last %}
+                            <hr>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'car/base.html' %}
+{% load mediapath %}
+
+{% block content %}
+<div class="col-md-5">
+    <div class="card mb-4 box-shadow">
+        <img src="{% mediapath object.image %}"/>
+        <div class="card-body">
+            <h2 style="font-size: 2em; font-weight: bold;" >{{ object.name }}</h2>
+            <p style="font-size: 1.5em">Год выпуска:</p>
+            <p>{{ object.year }}</p>
+            <p style="font-size: 1.5em">Цена:</p>
+            <p>{{ object.price }}</p>
+            <p style="font-size: 1.5em">Владелец:</p>
+            <p>{{ object.owner }}</p>
+            <p style="font-size: 1.5em">Владел с:</p>
+            <p>{{ object.start_year }}</p>
+            <p style="font-size: 1.5em">Владел по:</p>
+            <p> {{ object.stop_year }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
