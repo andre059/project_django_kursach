@@ -27,6 +27,7 @@ urlpatterns = [
     path('', include('car.urls', namespace='car')),
     path('order/', include('order.urls', namespace='order')),
     path('users/', include('users.urls', namespace='users')),
+    path('blog/', include('blog.urls', namespace='blog')),
     path('users/activate/<uidb64>/<token>/', views.activate, name='activate'),
     path('password/reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('password/reset/confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(),

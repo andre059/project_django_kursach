@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% load mediapath %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Блог</title>
+</head>
+<body>
+    {% for post in posts %}
+    <h3>{{ post.heading }}</h3>
+    <p>{{ post.blog_body }}</p>
+    <img src="{{ post.images|mediapath }}" width="480" height="300" alt="">
+    <p>{{ post.date_publication }}</p>
+    <p>{{ post.author }}</p>
+    {% endfor %}
+</body>
+</html>

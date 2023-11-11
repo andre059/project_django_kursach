@@ -3,7 +3,7 @@
     <ul class="list-unstyled">
         <li><a href="{% url 'car:home' %}" class="text-white">Главная</a></li>
         <li><a href="#" class="text-white">Создать</a></li>
-        <li><a href="#" class="text-white">Блог</a></li>
+        <li><a href="{% url 'blog:post' %}" class="text-white">Блог</a></li>
         <li><a href="#" id="photoButton" class="text-white">Фото</a></li>
         {% if user.is_authenticated %}
         <li><a href="{% url 'users:profile' %}" class="text-white">Профиль</a></li>

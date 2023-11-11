@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'car',
     'order',
     'users',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -116,7 +117,7 @@ FEEDBACK_FILE_PATH = BASE_DIR.joinpath('feedback.json')
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
