@@ -32,7 +32,9 @@
         </table>
     </div>
     <div class="card-footer">
+        {% if user.car.add_car %}
         <a href="{% url 'order:create' object.pk %}" class="btn btn-outline-success">Составить заявку</a>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

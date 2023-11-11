@@ -11,6 +11,22 @@ class FormStyleMixin:
             field.widget.attrs['class'] = 'form-control'
 
 
+class OwnerForm(FormStyleMixin, forms.ModelForm):
+    class Meta:
+        model = Owner
+        fields = '__all__'
+
+    def clean_email(self):
+        cleaned_data = self.cleaned_data['email']
+
+        if cleaned_data:
+            if not cleaned_data.endswith('@') and '@' not in cleaned_data:
+                raise forms.ValidationError('Должен быть введен адрес почты ')
+        else:
+            raise forms.ValidationError('Должен быть введен адрес почты ')
+        return cleaned_data
+
+
 class CarForm(FormStyleMixin, forms.ModelForm):
     class Meta:
         model = Car
@@ -25,22 +41,6 @@ class CarForm(FormStyleMixin, forms.ModelForm):
             if word.lower() in exception_words:
                 raise forms.ValidationError('Такое слово нельзя вводить !!!')
 
-        return cleaned_data
-
-
-class OwnerForm(FormStyleMixin, forms.ModelForm):
-    class Meta:
-        model = Owner
-        fields = '__all__'
-
-    def clean_email(self):
-        cleaned_data = self.cleaned_data['email']
-
-        if cleaned_data:
-            if not cleaned_data.endswith('@') and '@' not in cleaned_data:
-                raise forms.ValidationError('Должен быть введен адрес почты ')
-        else:
-            raise forms.ValidationError('Должен быть введен адрес почты ')
         return cleaned_data
 
 

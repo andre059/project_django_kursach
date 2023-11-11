@@ -12,7 +12,7 @@
                     {% csrf_token %}
                     {{ form.as_p }}
                     <button type="submit" class="btn btn-primary" style="background-color: blue; color: white;">
-                        Создать
+                        Править
                     </button>
                 </div>
             </div>
@@ -23,8 +23,8 @@
                     Владелец
                 </div>
                 <div class="card-body">
-                    {{ Owner_formset.management_form }}
-                    {% for form in Owner_formset.forms %}
+                    {{ Car_formset.management_form }}
+                    {% for form in Car_formset.forms %}
                         {{ form.as_p }}
                         {% if not forloop.last %}
                         <hr>

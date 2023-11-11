@@ -1,5 +1,7 @@
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
+from django.core.exceptions import PermissionDenied
 from django.forms import inlineformset_factory
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from car.forms import CarForm, OwnerForm, CarHistoryForm
@@ -21,11 +23,11 @@ class CarCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     success_url = reverse_lazy('car:home')
 
 
-class CarUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
+class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Car
-    form_class = CarForm
-    permission_required = ['car.change_car']
-    template_name = 'car/car_form_with_formset.html'
+
+    def test_func(self):
+        return self.request.user.is_superuser and self.request.user.is_staff
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -39,27 +41,27 @@ class CarUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
 
         context_data = super().get_context_data(**kwargs)
         # Формирование формсета
-        OwnerFormset = inlineformset_factory(Car, Owner, form=OwnerForm, extra=1)
-        CarHistoryFormset = inlineformset_factory(Car, CarHistory, form=CarHistoryForm, extra=1)
+        CarFormset = inlineformset_factory(parent_model=Owner, model=Car, form=CarForm, extra=1)
+        CarHistoryFormset = inlineformset_factory(parent_model=Car, model=CarHistory, form=CarHistoryForm, extra=1)
         if self.request.method == 'POST':
-            context_data['Owner_formset'] = OwnerFormset(self.request.POST, instance=self.object)
+            context_data['Car_formset'] = CarFormset(self.request.POST, instance=self.object.owner)
             context_data['CarHistory_formset'] = CarHistoryFormset(self.request.POST, instance=self.object)
         else:
-            context_data['Owner_formset'] = OwnerFormset(instance=self.object)
+            context_data['Car_formset'] = CarFormset(instance=self.object.owner)
             context_data['CarHistory_formset'] = CarHistoryFormset(instance=self.object)
         return context_data
 
     def form_valid(self, form):
         """обработка формы, когда данные формы прошли все необходимые проверки и являются валидными"""
 
-        Owner_formset = self.get_context_data()['Owner_formset']
+        Car_formset = self.get_context_data()['Car_formset']
         CarHistory_formset = self.get_context_data()['CarHistory_formset']
 
         self.object = form.save()
 
-        if Owner_formset.is_valid() and CarHistory_formset.is_valid():
-            Owner_formset.instance = self.object
-            Owner_formset.save()
+        if Car_formset.is_valid() and CarHistory_formset.is_valid():
+            Car_formset.instance = self.object
+            Car_formset.save()
 
             CarHistory_formset.instance = self.object
             CarHistory_formset.save()
@@ -67,9 +69,18 @@ class CarUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
         return super().form_valid(form)
 
 
-class CarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class CustomCarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Car
     success_url = reverse_lazy('car:home')
 
+    def get_permission_denied_message(self):
+        return "Вы не имеете прав на удаление."
+
     def test_func(self):
         return self.request.user.is_superuser and self.request.user.is_staff
+
+    def handle_no_permission(self):
+        if self.raise_exception or self.request.user.is_authenticated:
+            raise PermissionDenied(self.get_permission_denied_message())
+        else:
+            return HttpResponseRedirect(self.get_login_url())

@@ -19,11 +19,14 @@
                     Цена - не указана!
                 </small></h2>
             {% endif %}
-            <a href="{% url 'car:car_view' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary">
+            <a href="{% url 'car:inc_car_detail' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary">
                 Информация
             </a>
-            <a href="{% url 'car:update' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary">
+            <a href="{% url 'car:update' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary" style="color: green;">
                 Редактировать
+            </a>
+            <a href="{% url 'car:delete' object.pk %}" type="button" class="btn btn-lg btn-block btn-outline-primary" style="color: red;">
+                Удалить
             </a>
         </div>
     </div>
