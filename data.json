@@ -3,7 +3,7 @@
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-      "action_time": "2023-11-03T12:41:33.116Z",
+      "action_time": "2023-11-10T10:30:28.981Z",
       "user": 1,
       "content_type": 10,
       "object_id": "2",
@@ -16,11 +16,11 @@
     "model": "admin.logentry",
     "pk": 2,
     "fields": {
-      "action_time": "2023-11-03T12:53:44.523Z",
+      "action_time": "2023-11-10T10:30:34.974Z",
       "user": 1,
       "content_type": 10,
       "object_id": "3",
-      "object_repr": "andreyperm159@mail.ru",
+      "object_repr": "niyta@mail.ru",
       "action_flag": 3,
       "change_message": ""
     }
@@ -29,167 +29,167 @@
     "model": "admin.logentry",
     "pk": 3,
     "fields": {
-      "action_time": "2023-11-03T15:00:06.423Z",
+      "action_time": "2023-11-10T10:37:17.666Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "4",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "lk@mail.ru (Иван)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 4,
     "fields": {
-      "action_time": "2023-11-03T15:00:37.437Z",
+      "action_time": "2023-11-10T10:38:43.918Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "5",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 6,
+      "object_id": "1",
+      "object_repr": "ВАЗ 2106",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-      "action_time": "2023-11-03T15:06:30.716Z",
+      "action_time": "2023-11-10T10:45:06.378Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "6",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "andreyperm159@mail.ru (Андрей)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 6,
     "fields": {
-      "action_time": "2023-11-03T15:07:07.973Z",
+      "action_time": "2023-11-10T10:45:09.028Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "7",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 6,
+      "object_id": "2",
+      "object_repr": "Мазда СХ-5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 7,
     "fields": {
-      "action_time": "2023-11-03T16:22:52.560Z",
+      "action_time": "2023-11-10T10:46:36.058Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "8",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "niyta@mail.ru (Анна)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 8,
     "fields": {
-      "action_time": "2023-11-03T16:26:49.304Z",
+      "action_time": "2023-11-10T10:46:37.717Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "9",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 6,
+      "object_id": "3",
+      "object_repr": "форд фьюжен",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 9,
     "fields": {
-      "action_time": "2023-11-03T16:29:25.223Z",
+      "action_time": "2023-11-10T11:13:11.141Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "10",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "ВАЗ 2106 1981-2000",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 10,
     "fields": {
-      "action_time": "2023-11-03T16:30:18.180Z",
+      "action_time": "2023-11-10T11:13:38.951Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "11",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "ВАЗ 2106 2000-2004",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 11,
     "fields": {
-      "action_time": "2023-11-03T16:34:15.183Z",
+      "action_time": "2023-11-10T11:14:23.311Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "12",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "ВАЗ 2106 2004-2007",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 12,
     "fields": {
-      "action_time": "2023-11-03T16:36:30.974Z",
+      "action_time": "2023-11-10T11:15:17.432Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "13",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "форд фьюжен 2007-2012",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 13,
     "fields": {
-      "action_time": "2023-11-03T17:08:32.940Z",
+      "action_time": "2023-11-10T11:15:40.546Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "14",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "форд фьюжен 2012-2015",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 14,
     "fields": {
-      "action_time": "2023-11-03T17:09:13.585Z",
+      "action_time": "2023-11-10T11:16:21.319Z",
       "user": 1,
-      "content_type": 10,
-      "object_id": "15",
-      "object_repr": "andreyperm159@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Мазда СХ-5 2019-None",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 15,
     "fields": {
-      "action_time": "2023-11-04T07:32:23.234Z",
+      "action_time": "2023-11-10T17:12:14.450Z",
       "user": 1,
-      "content_type": 7,
+      "content_type": 3,
       "object_id": "1",
-      "object_repr": "andreyperm159@mail.ru (Андрей)",
+      "object_repr": "manager",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -198,24 +198,24 @@
     "model": "admin.logentry",
     "pk": 16,
     "fields": {
-      "action_time": "2023-11-04T07:33:04.826Z",
+      "action_time": "2023-11-10T17:13:08.726Z",
       "user": 1,
-      "content_type": 6,
-      "object_id": "1",
-      "object_repr": "mazda-cx5",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "andreyperm159@mail.ru",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Groups\", \"Staff status\", \"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 17,
     "fields": {
-      "action_time": "2023-11-04T07:34:44.533Z",
+      "action_time": "2023-11-11T09:59:47.701Z",
       "user": 1,
-      "content_type": 7,
-      "object_id": "2",
-      "object_repr": "niyta@mail.ru (Василий)",
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "новый форд ф-150 Раптор 2024 года, https://shop.ford.com/configure/f150/config/paint/Config%5B%7CFord%7CF-150%20F-150%7C2023%7C1%7C1.%7",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -224,11 +224,11 @@
     "model": "admin.logentry",
     "pk": 18,
     "fields": {
-      "action_time": "2023-11-04T07:36:57.367Z",
+      "action_time": "2023-11-11T11:53:06.007Z",
       "user": 1,
-      "content_type": 6,
-      "object_id": "2",
-      "object_repr": "ВАЗ 2106",
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "новый форд ф-150 Раптор 2024 года, ford.com",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -237,24 +237,24 @@
     "model": "admin.logentry",
     "pk": 19,
     "fields": {
-      "action_time": "2023-11-04T07:37:21.726Z",
+      "action_time": "2023-11-11T12:50:30.473Z",
       "user": 1,
-      "content_type": 8,
+      "content_type": 12,
       "object_id": "1",
-      "object_repr": "ВАЗ 2106 1981-2005",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+      "object_repr": "новый форд ф-150 Раптор 2024 года, ford.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043f\\u0438\\u0441\\u0438 \\u0431\\u043b\\u043e\\u0433\\u0430\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 20,
     "fields": {
-      "action_time": "2023-11-04T07:38:04.632Z",
+      "action_time": "2023-11-11T12:55:33.214Z",
       "user": 1,
-      "content_type": 8,
+      "content_type": 12,
       "object_id": "2",
-      "object_repr": "ВАЗ 2106 2005-None",
+      "object_repr": "новый электрический форд Раптор Ф-150, ford.com",
       "action_flag": 1,
       "change_message": "[{\"added\": {}}]"
     }
@@ -263,169 +263,52 @@
     "model": "admin.logentry",
     "pk": 21,
     "fields": {
-      "action_time": "2023-11-04T07:38:33.157Z",
+      "action_time": "2023-11-11T12:56:05.824Z",
       "user": 1,
-      "content_type": 8,
-      "object_id": "3",
-      "object_repr": "mazda-cx5 2019-None",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "новый электрический форд Раптор Ф-150, ford.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 22,
     "fields": {
-      "action_time": "2023-11-04T07:42:36.500Z",
+      "action_time": "2023-11-11T12:56:23.190Z",
       "user": 1,
-      "content_type": 6,
-      "object_id": "3",
-      "object_repr": "Ford Fusion",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "новый электрический форд Раптор Ф-150, ford.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 23,
     "fields": {
-      "action_time": "2023-11-04T07:43:13.399Z",
+      "action_time": "2023-11-11T13:01:44.347Z",
       "user": 1,
-      "content_type": 8,
-      "object_id": "4",
-      "object_repr": "Ford Fusion 2010-2015",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "новый форд ф-150 Раптор 2024 года, ford.com",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f\"]}}]"
     }
   },
   {
     "model": "admin.logentry",
     "pk": 24,
     "fields": {
-      "action_time": "2023-11-04T07:43:38.527Z",
+      "action_time": "2023-11-11T13:02:11.785Z",
       "user": 1,
-      "content_type": 8,
-      "object_id": "2",
-      "object_repr": "ВАЗ 2106 2005-2010",
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "новый форд ф-150 Раптор 2024 года, ford.com",
       "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b \\u043f\\u043e\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 25,
-    "fields": {
-      "action_time": "2023-11-05T11:04:43.871Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "9",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u043a\\u043a\\u0430\\u0437 \\u0437\\u0430\\u043a\\u0440\\u044b\\u0442\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 26,
-    "fields": {
-      "action_time": "2023-11-05T11:04:58.073Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "8",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 27,
-    "fields": {
-      "action_time": "2023-11-05T11:05:04.356Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "9",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 28,
-    "fields": {
-      "action_time": "2023-11-05T11:05:08.958Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "7",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 29,
-    "fields": {
-      "action_time": "2023-11-05T11:05:12.270Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "6",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 30,
-    "fields": {
-      "action_time": "2023-11-05T11:05:18.609Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "5",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 31,
-    "fields": {
-      "action_time": "2023-11-05T11:05:22.903Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "4",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 32,
-    "fields": {
-      "action_time": "2023-11-05T11:05:29.393Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "3",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 33,
-    "fields": {
-      "action_time": "2023-11-05T11:05:33.926Z",
-      "user": 1,
-      "content_type": 9,
-      "object_id": "2",
-      "object_repr": "mazda-cx5 от lk@mail.ru",
-      "action_flag": 3,
-      "change_message": ""
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u044f\"]}}]"
     }
   },
   {
@@ -825,6 +708,55 @@
     }
   },
   {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add запись",
+      "content_type": 12,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change запись",
+      "content_type": 12,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete запись",
+      "content_type": 12,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view запись",
+      "content_type": 12,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "manager",
+      "permissions": [
+        21,
+        22,
+        24,
+        36
+      ]
+    }
+  },
+  {
     "model": "contenttypes.contenttype",
     "pk": 1,
     "fields": {
@@ -913,48 +845,48 @@
     }
   },
   {
-    "model": "sessions.session",
-    "pk": "38mmz6wvtq9nom576p81cmpz2kmolqg9",
+    "model": "contenttypes.contenttype",
+    "pk": 12,
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHAClSP3vsNhN0FWzWQlPZk_Hdp0oPeJvPezFuEuK1T2FpawsziKrQTp98SIz1T2Qk_YrlXSbWsy4xyV-RBmxwrp9ftcP8Optimvr44ArSeMQIY0IaT55wBmVKOYIzugZDQazfgmZUCUkaDHVxHg03i8wUvnjip:1qzadK:SKZLnx_TG1dkKyAJFySEahNqDGgma4usj5rTwtxajRQ",
-      "expire_date": "2023-11-19T10:45:34.100Z"
+      "app_label": "blog",
+      "model": "post"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "evsy3q5bse80p8mfv465sml8po74antj",
+    "pk": "8hsjglykpaid1wyubtymh4tmvc7ewz89",
     "fields": {
-      "session_data": ".eJxVjMsOwiAQRf-FtSEwGR516d5vIMMAUjWQlHZl_Hdt0oVu7znnvkSgba1hG3kJcxJnocXpd4vEj9x2kO7Ubl1yb-syR7kr8qBDXnvKz8vh_h1UGvVbOyZCbTxosM4DqqmgndAoKFZbVwwjgio6I2tmayKwgwzsCUxicOL9Aaw5Ntk:1qytUK:Y-8rgbnormCJ0b3nrhRUIw60ie5kbAGqfllq_2yhk70",
-      "expire_date": "2023-11-17T12:41:24.717Z"
+      "session_data": ".eJxVjDkOwjAQRe_iGlkz3k1JzxmiGS84gBwpS4W4O0RKAe1_7_2XGGhb27AtZR7GLM4Cxel3Y0qP0neQ79Rvk0xTX-eR5a7Igy7yOuXyvBzu30GjpX1rr5NSSVNBx1WZXJFrhpCAfQBApalqso5ztQWiM8YGjAjAaD1HT-L9AegmN4U:1r104Y:zEnDKuWWOyHUtEewo3CylqKSPN-b_zeRZ_BTVpW21aY",
+      "expire_date": "2023-11-23T08:07:30.437Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "pd3xqlcpbbm4qw9ty60gnn7551a70bn3",
+    "pk": "fznbtilnjaapmtkbum9bi36zf1o372df",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHAClSP3vsNhN0FWzWQlPZk_Hdp0oPeJvPezFuEuK1T2FpawsziKrQTp98SIz1T2Qk_YrlXSbWsy4xyV-RBmxwrp9ftcP8Optimvr44ArSeMQIY0IaT55wBmVKOYIzugZDQazfgmZUCUkaDHVxHg03i8wUvnjip:1qzYWl:X-dtNKNKhYYFXiGxQ2SHuu8oKicUvsqtovxAUQluAU0",
-      "expire_date": "2023-11-19T08:30:39.868Z"
+      "session_data": ".eJxVjDkOwjAURO_iGln5GzGU9DmD5S04gBwpTirE3XGkFFDOvDfzVtZta7ZbTYudoroqVqffzrvwTGUH8eHKfdZhLusyeb0r-qBVD3NMr9vh_h1kV3NbU2_Yo4TRcN9xYsIzUMshiEEiYBbXAY6SXCC8IAARcUQWAWlAfb6i1TWe:1r1ixi:oxOzHoThH0QOhDtu0XpYOB0FBDE5R6OhiV9EP-5zquw",
+      "expire_date": "2023-11-25T08:03:26.843Z"
     }
   },
   {
     "model": "sessions.session",
-    "pk": "qj8qoiaggghot38liia3zwt8v8g350u7",
+    "pk": "w3fs0w07stz4fnto03p5ee7zttvqwwut",
     "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHAClSP3vsNhN0FWzWQlPZk_Hdp0oPeJvPezFuEuK1T2FpawsziKrQTp98SIz1T2Qk_YrlXSbWsy4xyV-RBmxwrp9ftcP8Optimvr44ArSeMQIY0IaT55wBmVKOYIzugZDQazfgmZUCUkaDHVxHg03i8wUvnjip:1qzB9r:hEd86Sig3xqdAOPufqa08selU4w_pxsOd3aqRdi6UDI",
-      "expire_date": "2023-11-18T07:33:27.579Z"
-    }
-  },
-  {
-    "model": "sessions.session",
-    "pk": "swtfn78id7s59th3ibp0j1q44bdvcm08",
-    "fields": {
-      "session_data": ".eJxVjMEOwiAQRP-FsyHAClSP3vsNhN0FWzWQlPZk_Hdp0oPeJvPezFuEuK1T2FpawsziKrQTp98SIz1T2Qk_YrlXSbWsy4xyV-RBmxwrp9ftcP8Optimvr44ArSeMQIY0IaT55wBmVKOYIzugZDQazfgmZUCUkaDHVxHg03i8wUvnjip:1qyxle:zr_-9zX_DiIp4NX8Jdfv48cxhnocLMBWcoS47jwiYHw",
-      "expire_date": "2023-11-17T17:15:34.486Z"
+      "session_data": ".eJxVjDkOwjAURO_iGln5GzGU9DmD5S04gBwpTirE3XGkFFDOvDfzVtZta7ZbTYudoroqVqffzrvwTGUH8eHKfdZhLusyeb0r-qBVD3NMr9vh_h1kV3NbU2_Yo4TRcN9xYsIzUMshiEEiYBbXAY6SXCC8IAARcUQWAWlAfb6i1TWe:1r1OrG:L7zkTY-XWhbOCThzhmdpEJpiBIRBSUIj_W-0T_vHq9E",
+      "expire_date": "2023-11-24T10:35:26.117Z"
     }
   },
   {
     "model": "car.owner",
     "pk": 1,
+    "fields": {
+      "name": "Иван",
+      "email": "lk@mail.ru"
+    }
+  },
+  {
+    "model": "car.owner",
+    "pk": 2,
     "fields": {
       "name": "Андрей",
       "email": "andreyperm159@mail.ru"
@@ -962,9 +894,9 @@
   },
   {
     "model": "car.owner",
-    "pk": 2,
+    "pk": 3,
     "fields": {
-      "name": "Василий",
+      "name": "Анна",
       "email": "niyta@mail.ru"
     }
   },
@@ -972,10 +904,10 @@
     "model": "car.car",
     "pk": 1,
     "fields": {
-      "name": "mazda-cx5",
-      "year": 2019,
-      "image": "preview/foto-cx-5-cveta_20_lyf2VXK.jpg",
-      "price": 2500000,
+      "name": "ВАЗ 2106",
+      "year": 1981,
+      "image": "preview/081d52108ea95b43316861cdae7d7bab_pT9GlXt.jpeg",
+      "price": 20000,
       "owner": 1
     }
   },
@@ -983,10 +915,10 @@
     "model": "car.car",
     "pk": 2,
     "fields": {
-      "name": "ВАЗ 2106",
-      "year": 1981,
-      "image": "preview/081d52108ea95b43316861cdae7d7bab.jpeg",
-      "price": null,
+      "name": "Мазда СХ-5",
+      "year": 2019,
+      "image": "preview/foto-cx-5-cveta_20_4hijE2R.jpg",
+      "price": 2180000,
       "owner": 2
     }
   },
@@ -994,31 +926,31 @@
     "model": "car.car",
     "pk": 3,
     "fields": {
-      "name": "Ford Fusion",
+      "name": "форд фьюжен",
       "year": 2007,
-      "image": "preview/ford_fusion.jpg",
-      "price": null,
-      "owner": 1
+      "image": "preview/ford_fusion_qvxhwR4.jpg",
+      "price": 500000,
+      "owner": 3
     }
   },
   {
     "model": "car.carhistory",
     "pk": 1,
     "fields": {
-      "car": 2,
-      "owner": 2,
+      "car": 1,
+      "owner": null,
       "start_year": 1981,
-      "stop_year": 2005
+      "stop_year": 2000
     }
   },
   {
     "model": "car.carhistory",
     "pk": 2,
     "fields": {
-      "car": 2,
-      "owner": 1,
-      "start_year": 2005,
-      "stop_year": 2010
+      "car": 1,
+      "owner": null,
+      "start_year": 2000,
+      "stop_year": 2004
     }
   },
   {
@@ -1026,9 +958,9 @@
     "pk": 3,
     "fields": {
       "car": 1,
-      "owner": 1,
-      "start_year": 2019,
-      "stop_year": null
+      "owner": 2,
+      "start_year": 2004,
+      "stop_year": 2007
     }
   },
   {
@@ -1036,165 +968,42 @@
     "pk": 4,
     "fields": {
       "car": 3,
-      "owner": 1,
-      "start_year": 2010,
+      "owner": null,
+      "start_year": 2007,
+      "stop_year": 2012
+    }
+  },
+  {
+    "model": "car.carhistory",
+    "pk": 5,
+    "fields": {
+      "car": 3,
+      "owner": 3,
+      "start_year": 2012,
       "stop_year": 2015
     }
   },
   {
-    "model": "order.order",
-    "pk": 1,
-    "fields": {
-      "car": 1,
-      "name": "Степан",
-      "email": "andreyperm159@mail.ru",
-      "message": "Доброго времени суток , хочу купить ваш автомобиль",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-05T08:31:49.875Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 10,
-    "fields": {
-      "car": 1,
-      "name": "dsffh",
-      "email": "andreyperm159@mail.ru",
-      "message": "eryhfch",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-05T10:45:47.973Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 11,
-    "fields": {
-      "car": 1,
-      "name": "мыв",
-      "email": "lk@mail.ru",
-      "message": "вамиавм",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-05T11:54:40.507Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 12,
-    "fields": {
-      "car": 1,
-      "name": "мыв",
-      "email": "lk@mail.ru",
-      "message": "вамиавм",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-06T09:24:55.410Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 13,
-    "fields": {
-      "car": 1,
-      "name": "hj,h",
-      "email": "lk@mail.ru",
-      "message": "cghm,hcjm",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-06T09:25:26.234Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 14,
-    "fields": {
-      "car": 1,
-      "name": "efahh",
-      "email": "andreyperm159@mail.ru",
-      "message": "dfbsrfd",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-06T09:26:41.377Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 15,
-    "fields": {
-      "car": 3,
-      "name": "уфкееку",
-      "email": "andreyperm159@mail.ru",
-      "message": "укыериека",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-06T09:36:08.656Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 16,
+    "model": "car.carhistory",
+    "pk": 6,
     "fields": {
       "car": 2,
-      "name": "орпсв",
-      "email": "andreyperm159@mail.ru",
-      "message": "ьимчоспр",
-      "email_sent": false,
-      "closed": false,
-      "created_at": "2023-11-06T09:43:52.771Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 17,
-    "fields": {
-      "car": 1,
-      "name": "Андрей",
-      "email": "andreyperm159@mail.ru",
-      "message": "etyjtynjty",
-      "email_sent": true,
-      "closed": false,
-      "created_at": "2023-11-06T18:37:18.310Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 18,
-    "fields": {
-      "car": 1,
-      "name": "Андрей",
-      "email": "andreyperm159@mail.ru",
-      "message": "etyjtynjty",
-      "email_sent": true,
-      "closed": false,
-      "created_at": "2023-11-06T18:45:42.027Z"
-    }
-  },
-  {
-    "model": "order.order",
-    "pk": 19,
-    "fields": {
-      "car": 1,
-      "name": "Андрей",
-      "email": "andreyperm159@mail.ru",
-      "message": "etyjtynjty",
-      "email_sent": true,
-      "closed": false,
-      "created_at": "2023-11-06T18:48:00.751Z"
+      "owner": 2,
+      "start_year": 2019,
+      "stop_year": null
     }
   },
   {
     "model": "users.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$600000$ew3Fo0OBHAnI8tqeBhq0XE$BvZ0we5zc0x2tGZWP8HF8tJzY7J9oS1B2OeTy2luwRQ=",
-      "last_login": "2023-11-03T12:41:24.711Z",
+      "password": "pbkdf2_sha256$600000$5XI66D075ui4y0lXxi6ApQ$W8O8o577ogQe9Rig3b1H8gyDVqdg4Fpyhp4WZ85PFQk=",
+      "last_login": "2023-11-09T08:07:30.425Z",
       "is_superuser": true,
       "first_name": "Admin",
       "last_name": "Adminich",
       "is_staff": true,
-      "date_joined": "2023-11-03T12:17:56.055Z",
+      "date_joined": "2023-11-09T07:58:41.679Z",
       "email": "andrey01590@gmail.com",
       "phone": null,
       "avatar": "",
@@ -1207,16 +1016,39 @@
   },
   {
     "model": "users.user",
-    "pk": 16,
+    "pk": 4,
     "fields": {
-      "password": "pbkdf2_sha256$600000$VLABuQkTjQqwf2yfoBu5AE$To/KzDzzQ9KBvLMKgS8jrjO2KBJpKs8vi+AL0ltZJ6A=",
-      "last_login": "2023-11-05T10:45:34.092Z",
+      "password": "pbkdf2_sha256$600000$qrqNuAfLfnpD6ULvOZZ8NS$xRtvusTGS8LSLTLdV/ULZaATV2pb0vxrtvmkaUHthIs=",
+      "last_login": "2023-11-11T08:03:26.840Z",
       "is_superuser": false,
       "first_name": "Андрей",
       "last_name": "",
-      "is_staff": false,
-      "date_joined": "2023-11-03T17:14:14.789Z",
+      "is_staff": true,
+      "date_joined": "2023-11-10T10:31:09Z",
       "email": "andreyperm159@mail.ru",
+      "phone": null,
+      "avatar": "",
+      "country": "Россия",
+      "is_active": true,
+      "date_of_birth": null,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$eOypX5rqml8bQOrNGqFWrD$2W0817V2r3qEWntIiWD1M9eiDCC53LDzk/j/km1g8zI=",
+      "last_login": "2023-11-11T08:01:08.803Z",
+      "is_superuser": false,
+      "first_name": "Анна",
+      "last_name": "",
+      "is_staff": false,
+      "date_joined": "2023-11-10T10:33:32.544Z",
+      "email": "niyta@mail.ru",
       "phone": null,
       "avatar": "",
       "country": "",
@@ -1224,6 +1056,28 @@
       "date_of_birth": null,
       "groups": [],
       "user_permissions": []
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+      "heading": "новый форд ф-150 Раптор 2024 года",
+      "blog_body": "Raptor®\r\nВысокопроизводительный двигатель EcoBoost® объемом 3,5 л EcoBoost EcoBoost с технологией автоматического запуска-останова\r\n4x4 с раздаточной коробкой Hi-Lock\r\nTrail Control™ с приводом на 1 педаль и системой помощи при повороте\r\nПротивоскользящие пластины для тяжелых условий эксплуатации\r\nАмортизаторы клапанов Fox™ с регулируемым напряжением С доступными амортизаторами клапанов Fox™ с двойным регулированием - спереди и сзади\r\nSYNC® 4 с улучшенным распознаванием голоса и 12-дюймовым ЖК-дисплеем\r\n17-дюймовые литые алюминиевые диски с 37-дюймовыми шинами повышенной проходимости\r\nУслуги по угону автомобилей (включая 1-летний план)",
+      "author": "ford.com",
+      "date_publication": "2023-11-11T11:52:59Z",
+      "images": "blogImj/1020071_VjdlRK8.jpg"
+    }
+  },
+  {
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+      "heading": "новый электрический форд Раптор Ф-150",
+      "blog_body": "LARIAT®\r\n20-дюймовые хромированные диски PVD\r\nSYNC® 4 с улучшенным распознаванием голоса и 12-дюймовым ЖК-дисплеем\r\nОснащенный Ford BlueCruise (90-дневная пробная версия)\r\nЗвуковая система B & O® от Bang & Olufsen с HD-радио (8 динамиков, включая сабвуфер)\r\nДоступный полногибридный двигатель V6 PowerBoost с бортовой мощностью 2,4 кВт Pro\r\nДоступный головной дисплей\r\nДоступная задняя дверь с дополнительным доступом при комплектации Bed Utility Package (предоставляется позднее)\r\nИнтеллектуальный доступ с помощью кнопки запуска\r\nАдаптивный круиз-контроль\r\nДоступен черный внешний вид LARIAT®\r\nУслуги по угону автомобилей (включая 1-летний план)",
+      "author": "ford.com",
+      "date_publication": "2023-11-11T12:55:30Z",
+      "images": "blogImj/carpixel.net-2021-ford-f-150-lariat-sport-supercrew-99719-wide.jpg"
     }
   }
 ]
