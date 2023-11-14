@@ -2082,4 +2082,33 @@ h3 {
     text-decoration: none;
     padding: 5px 10px;
 }
+
+.container form-comment{
+    font-size: 18px;
+}
+.container form-comment label{
+    margin: 10px 10px;
+}
+ .container form-comment input{
+    border-radius: 15px;
+    padding: 15px;
+    height: 50px;
+    width: 250px;
+}
+ .container form-comment textarea{
+    border-radius: 15px;
+    padding: 15px;
+    height: 150px;
+    width: 100%;
+    resize: vertical;
+}
+.container form-comment div{
+    margin: 10px;
+}
+ .container view-comment{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+}
 /*# sourceMappingURL=bootstrap-grid.css.map */
