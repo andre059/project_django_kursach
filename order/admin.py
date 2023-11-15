@@ -7,3 +7,4 @@ from order.models import Order
 class OrderAdmin(admin.ModelAdmin):
     list_display = ('car', 'email', 'name', 'created_at', 'closed', 'email_sent',)
     list_filter = ('car', )
+
