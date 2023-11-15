@@ -23,11 +23,13 @@ class CarCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     success_url = reverse_lazy('car:home')
 
 
-class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class CarUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin, UpdateView):
+    permission_required = 'car.change_car'
     model = Car
+    form_class = CarForm
 
     def test_func(self):
-        return self.request.user.is_superuser and self.request.user.is_staff
+        return self.request.user.is_staff
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -69,18 +71,21 @@ class CarUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return super().form_valid(form)
 
 
-class CustomCarDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class CustomCarDeleteView(LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin, DeleteView):
+    permission_required = 'car.delete_car'
     model = Car
+    # form_class = CarForm
+    context_object_name = 'car'
     success_url = reverse_lazy('car:home')
 
     def get_permission_denied_message(self):
         return "Вы не имеете прав на удаление."
 
     def test_func(self):
-        return self.request.user.is_superuser and self.request.user.is_staff
-
-    def handle_no_permission(self):
-        if self.raise_exception or self.request.user.is_authenticated:
-            raise PermissionDenied(self.get_permission_denied_message())
-        else:
-            return HttpResponseRedirect(self.get_login_url())
+        return self.request.user.is_staff
+    #
+    # def handle_no_permission(self):
+    #     if self.raise_exception or self.request.user.is_authenticated:
+    #         raise PermissionDenied(self.get_permission_denied_message())
+    #     else:
+    #         return HttpResponseRedirect(self.get_login_url())

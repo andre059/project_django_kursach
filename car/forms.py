@@ -44,6 +44,8 @@ class CarForm(FormStyleMixin, forms.ModelForm):
         return cleaned_data
 
 
+
+
 class CarHistoryForm(FormStyleMixin, forms.ModelForm):
     class Meta:
         model = CarHistory
