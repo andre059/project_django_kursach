@@ -1,0 +1,33 @@
+{% extends 'car/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 mb-5">
+        <a href="{% url 'mailing:mailing_create' %}" class="btn btn-primary my-2">Создать рассылку</a>
+    </div>
+    {% for object in object_list %}
+    <div class="col-md-5">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ object.message.head }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="card-body">
+                <p class="card-text">Время начало отправки: {{ object.time_start }}</p>
+                <p class="card-text">Время окончания отправки: {{ object.time_end }}</p>
+                <p class="card-text">Периодичность: {{ object.periodicity }}</p>
+                {% if object.is_active %}
+                    <p class="card-text">Статус: Активна</p>
+                {% else %}
+                    <p class="card-text">Статус: Неактивна</p>
+                {% endif %}
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-block btn-outline-primary" href="{% url 'mailing:mailing_detail' object.pk %}">Посмотреть</a>
+                <a class="btn btn-primary" href="{% url 'mailing:mailing_update' object.pk %}">Изменить</a>
+                <a class="btn btn-outline-danger float-right" href="{% url 'mailing:mailing_delete' object.pk %}">Удалить</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

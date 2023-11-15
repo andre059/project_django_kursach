@@ -1,0 +1,30 @@
+{% extends 'car/base.html' %}
+{% block content %}
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+        <div class="card shadow-sm">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Тема:{{object.message.head}}</h4>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Сообщение: {{object.message.body}}</p>
+                <p class="card-text">Пользователь: {{object.user|default:'Неизвестный пользователь'}}</p>
+                <p class="card-text">Время рассылки: {{ object.time_start}} - {{ object.time_end}}</p>
+                <p class="card-text">Периодичность: {{ object.periodicity}}</p>
+                {% if object.is_active %}
+                    <p class="card-text">Статус: Активна</p>
+                {% else %}
+                    <p class="card-text">Статус: Неактивна</p>
+                {% endif %}
+                <p class="card-text">КОМУ:
+                    {% for client in object.client.all %}
+                        <p class="card-text">{{client}}</p>
+                    {% endfor %}
+                <a href="{% url 'mailing:mailings' %}" type="button"
+                   class="btn btn-sm btn-outline-secondary">Назад</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

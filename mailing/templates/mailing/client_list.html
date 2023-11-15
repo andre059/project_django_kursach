@@ -1,0 +1,28 @@
+{% extends 'car/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 mb-5">
+        <a href="{% url 'mailing:client_create' %}" class="btn btn-primary"> Создать клиента </a>
+    </div>
+    {% for object in object_list %}
+    <div class="col-md-5">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ object.email }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="card-body">
+                <p class="card-text">{{ object.fio | default:"-" | title}}</p>
+                <p class="card-text">{{ object.comment | default:"-" }}</p>
+            </div>
+            <div class="card-footer">
+                {% if user.is_authenticated %}
+                <a class="btn btn-primary" href="{% url 'mailing:client_update' object.pk %}">Изменить</a>
+                <a class="btn btn-outline-danger float-right" href="{% url 'mailing:client_delete' object.pk %}">Удалить</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -2089,13 +2089,13 @@ h3 {
 .container form-comment label{
     margin: 10px 10px;
 }
- .container form-comment input{
+.container form-comment input{
     border-radius: 15px;
     padding: 15px;
     height: 50px;
     width: 250px;
 }
- .container form-comment textarea{
+.container form-comment textarea{
     border-radius: 15px;
     padding: 15px;
     height: 150px;
@@ -2105,7 +2105,7 @@ h3 {
 .container form-comment div{
     margin: 10px;
 }
- .container view-comment{
+.container view-comment{
     padding: 10px;
     margin: 10px;
     font-size: 18px;

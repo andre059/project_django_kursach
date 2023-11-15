@@ -1,0 +1,56 @@
+{% extends 'car/base.html' %}
+{% load mediapath %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-lg-9 col-md-6 col-sm-12">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <tr>
+                            <td class="w-25">Количество рассылок всего</td>
+                            <td>{{ mailing }}</td>
+                        </tr>
+                        <tr>
+                            <td class="w-25">Количество активных рассылок</td>
+                            <td>{{ started_mailing }}</td>
+                        </tr>
+                        <tr>
+                            <td class="w-25">Количество уникальных клиентов для рассылок</td>
+                            <td>{{ client }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% for object in object_list %}
+<div class="row text-center">
+    <div class="col-12">
+        <div class="card mb-4 box-shadow">
+            <div class="card-header">
+                <h4 class="card-title pricing-card-title">{{object.title|title}}</h4>
+            </div>
+            <img class="card-img-top"
+                 src="{{ post.images|mediapath }}"
+                 alt="Card image cap">
+            <div class="card-body">
+                <p class="my-0 font-weight-normal">{{object.content|default:"-"|truncatechars:100}}</p>
+                <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+                    <li>Просмотры: {{object.views}}</li>
+                    <li>Дата публикации: {{object.date_of_creation}}</li>
+                </ul>
+                <div class="card-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

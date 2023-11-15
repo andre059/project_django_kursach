@@ -1,0 +1,25 @@
+{% extends 'car/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 mb-5">
+        <a href="{% url 'mailing:message_create' %}" class="btn btn-primary"> Создать письмо </a>
+    </div>
+    {% for object in object_list %}
+    <div class="col-md-5">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ object.head }}</h4>
+        </div>
+        <div class="card-body">
+            <div class="card-body">
+                <p class="card-text">{{ object.body| truncatechars:100 }}</p>
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-primary" href="{% url 'mailing:message_update' object.pk %}">Изменить</a>
+                <a class="btn btn-outline-danger float-right" href="{% url 'mailing:message_delete' object.pk %}">Удалить</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

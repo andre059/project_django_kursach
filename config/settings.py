@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_apscheduler',
 
     'car',
     'order',
     'users',
     'blog',
+    'mailing',
 ]
 
 MIDDLEWARE = [
@@ -155,9 +157,9 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
-CACHES_ENABLED = os.getenv('CACHES_ENABLED') == 'True'
+CACHE_ENABLED = os.getenv('CACHE_ENABLED') == 'True'
 
-if CACHES_ENABLED:
+if CACHE_ENABLED:
     CACHES = {
         'default': {
             'BACKEND': 'django.core.cache.backends.redis.RedisCache',
