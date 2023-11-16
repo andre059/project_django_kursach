@@ -1,6 +1,5 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.sites.shortcuts import get_current_site
 from django.utils.encoding import force_bytes, force_str
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
@@ -14,7 +13,7 @@ from users.models import User
 from .token import account_activation_token
 
 from django.contrib.auth.views import PasswordResetView as BasePasswordResetView, \
-        PasswordResetConfirmView as BasePasswordResetConfirmView
+    PasswordResetConfirmView as BasePasswordResetConfirmView
 from django.contrib import messages
 
 
@@ -29,7 +28,6 @@ class RegisterView(CreateView):
         self.method = None
 
     def form_valid(self, form):
-
         # Получаем пользователя из формы и делаем его не активным
         user = form.save()
         user.is_active = False
@@ -62,7 +60,7 @@ def activate(request, uidb64, token):
     try:
         uid = force_str(urlsafe_base64_decode(uidb64))
         user = User.objects.get(pk=uid)
-    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
+    except (TypeError, ValueError, OverflowError, User.DoesNotExist):
         user = None
 
     if user is not None and account_activation_token.check_token(user, token):

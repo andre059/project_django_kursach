@@ -224,4 +224,3 @@ class LogsListView(LoginRequiredMixin, ListView):
             return Logs.objects.all()
         queryset = Logs.objects.filter(mailing__user=self.request.user)
         return queryset
-

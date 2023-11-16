@@ -34,5 +34,3 @@ class OrderCreateView(CreateView):
         obj.save()
 
         return super().form_valid(form)
-
-
